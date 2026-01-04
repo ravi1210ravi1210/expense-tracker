@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ========= HEADER  /  NAVBAR ========= -->
+  <header class="header">
+    <h2 class="logo">MySite</h2>
+
+    <!-- ICON  -->
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+
+    <!-- NAV  -->
+    <nav class="nav" id="navMenu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- ======= MAIN ====== -->
+  <main>
+
+    <h2>Daily Expenses</h2>
+
+    <input type="text" id="expenseName" placeholder="Expense name">
+    <input type="number" id="expenseAmount" placeholder="Amount">
+    <input type="date" id="expenseDate">
+
+
+    <button id="addBtn">Add Expense</button>
+
+    <ul id="expenseList"></ul>
+
+    <h3>Total: ₹<span id="total">0</span></h3>
+
+  </main>
+
+  <script src="js/script.js">
+
+  </script>
+
+</body>
+
+</html>

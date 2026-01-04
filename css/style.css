@@ -1,0 +1,128 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======= BODY ====== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
+
+/* ======= HEADER ====== */
+.header {
+  background: #222;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav a {
+    padding: 15px 0;
+    display: block;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}
+
+
+/* ====== MAIN ====== */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ======== INPUTS & BUTTON ====== */
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* ====== EXPENSE LIST ====== */
+#expenseList li {
+  list-style: none;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#expenseList button {
+  width: auto;
+  background: transparent;
+  font-size: 18px;
+}
+
+
+/* ====== MOBILE UI IMPROVE ====== */
+@media (max-width: 480px) {
+  main {
+    margin: 15px;
+    padding: 20px;
+  }
+}
